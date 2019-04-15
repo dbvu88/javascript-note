@@ -1,4 +1,3 @@
-'use strict';
 
 let strToSearch = 'a really long hyphenated string';
 
