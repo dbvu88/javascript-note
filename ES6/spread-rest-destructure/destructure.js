@@ -27,3 +27,16 @@ getData({ url:'myserver.com/api' }, (url, method) => console.log(url, method))
 getData(undefined, (url, method) => console.log(url, method))
 getData({ url: undefined }, (url, method) => console.log(url, method))
 getData({ url: 'www.hello.com/api', method:'get' }, (url, method) => console.log(url, method))
+
+// nested object
+
+const parentObject = {
+    title: 'Parent',
+    child: {
+        title: 'Child'
+    }
+}
+
+const { title: parentTitle, child: { title: childTitle} } = parentObject
+
+console.log(parentTitle, childTitle);
