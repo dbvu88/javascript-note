@@ -1,4 +1,3 @@
-// mutability
 
 var name = "Ben"
 
@@ -9,4 +8,6 @@ function namer() {
 namer()
 
 console.log(name);
+
+// you can reassign/overwrite and modify var any way you want
 
